@@ -1,50 +1,61 @@
-# Welcome to your Expo app 👋
+# 📸 GeoGallery
+<img width="315" height="560" alt="1" src="https://github.com/user-attachments/assets/cbfa3164-1774-458b-a3d4-fad76c900df9" />
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+GeoGallery is a mobile app built with **React Native** and **Expo** that lets you **take photos and save them with location data** — creating a gallery of memories tied to places.
 
-## Get started
 
-1. Install dependencies
+## ✨ Features
+- **Take Photos** using the device camera
+- **Save Images** to local file storage
+- **Pick Images** from the device gallery
+- **Attach Location** using:
+  - Device GPS tracking
+  - Manual location input
+- **Offline Storage** with SQLite
 
+## 📖 Background
+Initially, the plan was to allow users to select locations from an interactive Google Map.  
+However, Google Maps API requires credit card details even for free usage.  
+To keep the project simple and accessible, I switched to **native location tracking** and **manual input**
+
+## 🛠 Tech Stack
+- **React Native** (with Expo)
+- **Expo Camera** for capturing images
+- **Expo FileSystem** for local storage
+- **Expo ImagePicker** for selecting images
+- **Expo Location** for GPS coordinates
+- **SQLite** for local data storage
+
+## 🚀 Installation & Setup
+1. Clone the repository:
    ```bash
+   git clone https://github.com/your-username/geogallery.git
+   cd geogallery
+   ```
+2. Install dependencies:
+      ```bash
    npm install
    ```
-
-2. Start the app
-
-   ```bash
+3. Start the Expo development server:
+      ```bash
    npx expo start
    ```
+4. Run on your device:
+   Scan the QR code in the terminal/Expo Go app
+   Or use an emulator
+## 🧠 Lessons Learned
+- Navigating API restrictions & finding workarounds
+- Using native device features in React Native
+- Implementing local storage with SQLite
+- Balancing feature scope with practical constraints
 
-In the output, you'll find options to open the app in a
+## Some Screenshots 🖼️
+<img width="315" height="560" alt="1" src="https://github.com/user-attachments/assets/cbfa3164-1774-458b-a3d4-fad76c900df9" />
+<img width="315" height="560" alt="2" src="https://github.com/user-attachments/assets/33d6322d-218c-44b9-81fb-a3eb84a187b0" />
+<img width="315" height="560" alt="3" src="https://github.com/user-attachments/assets/29a44c32-496a-4805-bbdc-63adcb0e8810" />
+<img width="315" height="560" alt="4" src="https://github.com/user-attachments/assets/fa407267-91df-4195-b293-d3e5d05b5920" />
+<img width="315" height="560" alt="5" src="https://github.com/user-attachments/assets/e7ab18ec-cfd5-493f-9b35-73e8cb854a0b" />
+<img width="315" height="560" alt="6" src="https://github.com/user-attachments/assets/fffb7888-df6f-4023-8a33-73df7d20a67f" />
+<img width="315" height="560" alt="7" src="https://github.com/user-attachments/assets/7f3000d0-5535-4cda-8882-849a558684b5" />
+<img width="315" height="560" alt="8" src="https://github.com/user-attachments/assets/efea96df-5996-44c0-9c8b-40829ba75438" />
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
-
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
-
-## Get a fresh project
-
-When you're ready, run:
-
-```bash
-npm run reset-project
-```
-
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
-
-## Learn more
-
-To learn more about developing your project with Expo, look at the following resources:
-
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
-
-## Join the community
-
-Join our community of developers creating universal apps.
-
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
